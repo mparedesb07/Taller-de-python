@@ -121,6 +121,7 @@ if st.session_state.bet > 0:
             st.error("😈 Has perdido todo tu dinero, espero que te hayas divertido 😈")
 
         if st.button("🔄 Jugar de nuevo"):
-            st.session_state.bet == 0
+            st.session_state.bet = 0
             reset_game()
+
             st.rerun()
